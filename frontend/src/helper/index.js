@@ -1,1 +1,2 @@
-export { Color } from './color';
+export { Color } from "./Color";
+export * from "./TextStyle";

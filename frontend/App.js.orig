@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+import React, { useState } from "react";
+import { Home } from "./src/screens";
+
+export default function App() {
+  return <Home />;
+=======
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { AppName } from "./src/components";
+import { Color, initializeFonts, TextStyle } from "./src/utils";
+import { NavigationContainer } from '@react-navigation/native';
+import { CreateHouseStack } from "./src/navigation/Stack";
+
+export default function App() {
+  initializeFonts();
+  return (
+    <NavigationContainer>
+      <CreateHouseStack></CreateHouseStack>
+      {/* <HostNavBar /> */}
+    </NavigationContainer>
+  );
+>>>>>>> feature/navigation
+}

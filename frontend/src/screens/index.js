@@ -1,2 +1,15 @@
 export { HouseList } from "./host/HouseList";
 export { Home } from "./Home";
+export { CreateHouse } from "./host/CreateHouse";
+export { CreateBill } from "./host/CreateBill";
+export { CreateRoom } from "./host/CreateRoom";
+export { AddGuest } from "./host/AddGuest";
+export { HostHome } from "./host/HostHome";
+export { HostList } from "./host/HostList";
+export { HostProfile } from "./host/HostProfile";
+export { HostChat } from "./host/HostChat";
+export { GuestDetail } from './host/GuestDetail';
+export { HostInfo } from './host/HostInfo';
+export { ViewHouse } from './host/ViewHouse';
+export { ViewRoom } from './host/ViewRoom';
+export { ViewGuest } from './host/ViewGuest';

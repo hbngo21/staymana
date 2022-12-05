@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Home } from "./src/screens";
+import React from "react";
+import { LoginHandler } from "./src/screens/Login";
 
 export default function App() {
-  return <Home />;
+  return (<LoginHandler />)
 }

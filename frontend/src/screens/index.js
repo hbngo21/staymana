@@ -1,5 +1,3 @@
-export { HouseList } from "./host/HouseList";
-export { Home } from "./Home";
 export { CreateHouse } from "./host/CreateHouse";
 export { CreateBill } from "./host/CreateBill";
 export { CreateRoom } from "./host/CreateRoom";

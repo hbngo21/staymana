@@ -1,8 +1,7 @@
 import * as React from "react";
-import { Dimensions, View, Image, Text } from "react-native";
+import { View, Image, Text } from "react-native";
 import { Color, initializeFonts, TextStyle } from "../../utils";
-
-const width = Dimensions.get("window").width;
+import { ScreenSize } from "../../utils";
 
 export const HouseCard = (props) => {
   const {
@@ -15,7 +14,7 @@ export const HouseCard = (props) => {
   return (
     <View style={{marginBottom: 10}}>
       <Image
-        style={{width: 327 / 375 * width, height: 194, borderRadius: 16, marginBottom: 6}}
+        style={{width: 327 / 375 * ScreenSize.width, height: 194, borderRadius: 16, marginBottom: 6}}
         source={{
           uri: avatar,
         }}

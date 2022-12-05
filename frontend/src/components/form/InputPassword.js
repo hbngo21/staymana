@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Dimensions, KeyboardAvoidingView } from "react-native";
+import { KeyboardAvoidingView } from "react-native";
 import { TextInput } from "react-native-paper";
 import { Color, initializeFonts, TextStyle } from "../../utils";
-
-const width = Dimensions.get("window").width;
+import { ScreenSize } from "../../utils";
 
 export const InputPassword = (props) => {
   const [password, setPassword] = useState("");
@@ -33,7 +32,7 @@ export const InputPassword = (props) => {
         style={{
           ...TextStyle.bodyLarge,
           color: Color.green_100,
-          width: (327 / 375) * width,
+          width: (327 / 375) * ScreenSize.width,
           backgroundColor: Color.white_100,
         }}
         secureTextEntry={passwordVisibility}

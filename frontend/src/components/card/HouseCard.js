@@ -12,7 +12,7 @@ export const HouseCard = (props) => {
   } = props;
   initializeFonts();
   return (
-    <View style={{marginBottom: 10}}>
+    <View style={{marginBottom: 10, marginLeft: 24 / 375 * ScreenSize.width}}>
       <Image
         style={{width: 327 / 375 * ScreenSize.width, height: 194, borderRadius: 16, marginBottom: 6}}
         source={{
@@ -21,10 +21,6 @@ export const HouseCard = (props) => {
       />
       <Text style={TextStyle.h4}>{name}</Text>
       <View style={{flexDirection: "row"}}>
-        {/* <SvgUri 
-          uri="../../images/location-icon.svg"
-        /> */}
-        {/* <LocationIcon /> */}
         <Image
           style={{width: 8, height: 10, marginTop: 5, marginRight: 4}}
           source={require("../../images/location-icon.png")}

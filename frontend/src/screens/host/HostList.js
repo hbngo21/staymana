@@ -35,7 +35,7 @@ const houseList = [
 export function HostList({ navigation}) {
     return (
       <SafeAreaView>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
           {houseList.map(house => (
           <TouchableOpacity onPress={() => navigation.navigate("ViewHouse", { name: house.name })}>
            <HouseCard avatar={house.avatar} name={house.name} address={house.address}/>
